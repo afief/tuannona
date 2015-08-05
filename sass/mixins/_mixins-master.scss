@@ -1,0 +1,51 @@
+$baseUrl: "http://localhost/tn/wp-content/themes/tuannnona/";
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        display: table;
+        content: " ";
+        clear: both;
+    }
+}
+@mixin transition($radius) {
+    -webkit-transition: $radius;
+    -moz-transition: $radius;
+    -ms-transition: $radius;
+    transition: $radius;
+}
+@mixin transition2($a, $b) {
+    -webkit-transition: $a , $b;
+    -moz-transition: $a , $b;
+    -ms-transition: $a , $b;
+    transition: $a , $b;
+}
+@mixin rotate($text) {
+    -webkit-transform: rotate($text);
+    -moz-transform: rotate($text);
+    -ms-transform: rotate($text);
+    transform: rotate($text);
+}

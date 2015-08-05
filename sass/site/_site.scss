@@ -1,0 +1,208 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*-------------------------------------------------------------- */
+
+$baseUrl: "http://localhost/tn/wp-content/themes/tuannona/";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url($baseUrl + "images/bg.png");
+	background-repeat: repeat;
+}
+header {
+	h1 {
+		font-family: anabelle;
+		font-size: 150px;
+		text-align: center;
+		font-weight: normal;
+		color: #550000;
+		margin: 0px;
+		margin-top: 20px;
+		.logo {
+			display: block;
+			width: 100%;
+			height: 150px;
+			background-image: url($baseUrl + "images/logo.png");
+		}
+	}
+	.banner {
+		background-image: url($baseUrl + "images/banner.png");
+		width: 100%;
+		height: 100px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: 0px 25px;
+		.wrapper {
+			width: 100px;
+			height: 100px;
+			margin: 0px auto;
+			.middle {
+				display: table-cell;
+				text-align: center;
+				vertical-align: middle;
+				width: 100px;
+				height: 100px;
+				margin: 0px;
+				padding: 0px;
+				.buletan {
+					background-image: url($baseUrl + "images/banner_bulet.png");
+					display: inline-block;
+					width: 80px;
+					height: 80px;
+					background-size: contain;
+					cursor: pointer;
+					background-repeat: no-repeat;
+					@include transition2(width 0.3s , height 0.3s);
+					&:hover {
+						width: 95px;
+						height: 95px;
+					}
+				}
+
+			}
+		}
+	}    
+}
+
+.container {
+	width: 800px;
+	margin: 0px auto;
+
+	.avatars {
+		@include clearfix;
+        //background-image: url($baseUrl + "images/bg_coretan.png");
+        .kiri, .kanan {
+        	width: 50%;
+        	float: left;
+        	.ava {
+        		width: 150px;
+        		height: 150px;
+        		text-align: center;
+        		position: relative;
+        		display: table-cell;
+        		vertical-align: middle;
+        	}
+        	.avatar {
+        		width: 110px;
+        		height: 110px;
+        		border-radius: 50%;
+        		border: solid 6px #fff;
+        		box-shadow: 0px 0px 6px -2px #444;
+        		background-size: cover;
+        		display: inline-block;
+        		@include transition(border-width 0.3s);
+        		&:hover {
+        			border-width: 13px;
+        			cursor: pointer;
+        		}
+        	}
+        }
+        .kiri {
+        	.wrapper {
+        		float: right;
+        		.avatar:hover { @include rotate(-5deg); }
+        	}
+        }
+        .kanan {
+        	.wrapper {
+        		float: left;
+        		.avatar:hover { @include rotate(5deg); }
+        	}
+        }
+    }
+
+    .cards {
+    	.mdl-card {
+    		width: 100%;
+    		margin-bottom: 30px;
+            &.ganjil {
+                width: 49%;
+                float: left;
+                margin-left: 1%;
+            }
+            &.genap {
+                width: 49%;
+                float: left;
+                margin-right: 1%;
+            }
+    		&__title {
+    			color: #fff;
+    			height: 200px;
+    			position: relative;
+    			padding: 0px;
+    			.title {
+    				text-shadow: 0px 0px 2px #000;
+    				position: absolute;
+    				width: 100%;
+    				height: 100%;
+    				background-color: rgba(0, 0, 0, 0.3);
+    				a {
+    					position: absolute;
+    					left: 20px;
+    					bottom: 20px;
+    				}
+    			}
+    		}
+    		&__menu {
+    			color: #fff;
+    		}
+    		.meta {
+    			table {
+    				border: none;
+    			}
+    			.avatar {
+    				width: 40px;
+    				height: 40px;
+    				border-radius: 25%;
+    				border: solid 2px #fff;
+    				box-shadow: 0px 0px 3px -1px #444;
+    				background-size: cover;
+    				display: inline-block;
+    			}
+    			.user {
+    				font-family: "Roboto";
+    				display: inline-block;
+    				.name {
+    					font-weight: 500;
+    				}
+    				.date {
+    					font-size: small;
+    					font-weight: lighter;
+    				}
+    			}
+    			.td-comment {
+    				color: #1B5F7D;
+    				text-align: right;
+    				a, a:hover, a:visited {
+    					color: inherit;
+    				}
+    				.comment:after {
+    					right: -14px;
+    					background: #FF8700;
+    				}
+    			}
+    		}
+    		.content {
+    			font-family: "Roboto";
+    			color: #444;
+    			font-size: medium;
+    		}
+    	}
+    }
+}
+
+/*
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+@import "primary/asides";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
