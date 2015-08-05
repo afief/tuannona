@@ -56,6 +56,10 @@ get_header(); ?>
 			</button>
 		</div>
 	</div>
+	
+	<div class="commentwrapper">
+	<?php comments_template(); ?>
+	</div>
 <?php endwhile; ?>
 <?php endif; ?>
 </div>

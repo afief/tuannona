@@ -5,6 +5,8 @@
  * @package TuanNona
  */
 
+require get_template_directory() . '/inc/comment_walker.php';
+
 if (! function_exists('getAva')) :
 	function getAva($id) {
 		if ($id == 1) {
@@ -166,3 +168,5 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+

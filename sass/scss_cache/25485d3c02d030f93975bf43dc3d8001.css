@@ -1,4 +1,4 @@
-/* compiled by scssphp v0.0.9 on Wed, 05 Aug 2015 19:06:11 +0200 (1.1133s) */
+/* compiled by scssphp v0.0.9 on Wed, 05 Aug 2015 20:22:20 +0200 (0.8184s) */
 
 /*!
 Theme Name: TuanNona
@@ -302,6 +302,9 @@ blockquote, q {
   quotes: "" ""; }
   blockquote:before, q:before, blockquote:after, q:after {
     content: ""; }
+
+p {
+  margin-top: 0.75em; }
 
 hr {
   background-color: #ccc;
@@ -642,7 +645,8 @@ header h1 {
       font-family: "Roboto";
       color: #444;
       font-size: medium;
-      width: 100%; }
+      width: 100%;
+      padding: 25px; }
 
 .sticky {
   display: block; }
@@ -671,6 +675,136 @@ header h1 {
 
 .bypostauthor {
   display: block; }
+
+.commentwrapper {
+  display: table;
+  margin: 0px auto;
+  font-family: "Roboto";
+  width: 100%; }
+  .commentwrapper h2 {
+    font-weight: normal;
+    font-size: xx-large; }
+  .commentwrapper .comment-list {
+    list-style: none;
+    padding: 0px;
+    margin: 10px 0px; }
+  .commentwrapper .comment-list article:before, .commentwrapper .comment-list article:after {
+    display: table;
+    content: " ";
+    clear: both; }
+    .commentwrapper .comment-list article .wrapper {
+      background-color: white;
+      position: relative;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+      margin-bottom: 20px; }
+    .commentwrapper .comment-list article .wrapper:before, .commentwrapper .comment-list article .wrapper:after {
+      display: table;
+      content: " ";
+      clear: both; }
+    .commentwrapper .comment-list article .wrapper h2 {
+      font-size: large; }
+      .commentwrapper .comment-list article .wrapper h2 a {
+        color: "#dddddd";
+        text-decoration: none;
+        text-transform: capitalize; }
+    .commentwrapper .comment-list article .wrapper .comment-content {
+      font-size: medium; }
+    .commentwrapper .comment-list article .wrapper .gravatar {
+      position: absolute;
+      display: block;
+      top: 20px;
+      left: 20px;
+      margin: 0px; }
+      .commentwrapper .comment-list article .wrapper .gravatar img {
+        border-radius: 50%; }
+    .commentwrapper .comment-list article .wrapper .comment-meta {
+      padding: 20px 20px 10px 100px;
+      display: block;
+      min-height: 100px; }
+    .commentwrapper .comment-list article .wrapper .commentfooter {
+      border-top: solid 1px #e6e6e6;
+      background-color: #eee; }
+      .commentwrapper .comment-list article .wrapper .commentfooter .comment-reply-link, .commentwrapper .comment-list article .wrapper .commentfooter .comment-edit-link, .commentwrapper .comment-list article .wrapper .commentfooter .check {
+        display: inline-block;
+        padding: 10px;
+        color: "#dddddd";
+        text-decoration: none;
+        border-right: solid 1px #e6e6e6; }
+        .commentwrapper .comment-list article .wrapper .commentfooter .comment-reply-link i, .commentwrapper .comment-list article .wrapper .commentfooter .comment-edit-link i, .commentwrapper .comment-list article .wrapper .commentfooter .check i {
+          font-size: medium; }
+      .commentwrapper .comment-list article .wrapper .commentfooter .comment-edit-link {
+        float: right;
+        border-left: solid 1px #e6e6e6; }
+      .commentwrapper .comment-list article .wrapper .commentfooter .comment-meta-item {
+        margin: 0px; }
+        .commentwrapper .comment-list article .wrapper .commentfooter .comment-meta-item i {
+          font-size: medium; }
+      .commentwrapper .comment-list article .wrapper .commentfooter .check {
+        opacity: 0.5;
+        border: 0px;
+        font-size: small; }
+      .commentwrapper .comment-list article .wrapper .commentfooter time {
+        font-size: small;
+        padding: 10px;
+        color: #444 !important;
+        display: inline-block; }
+        .commentwrapper .comment-list article .wrapper .commentfooter time a {
+          color: inherit;
+          text-decoration: none; }
+  .commentwrapper .comment-list section.child-comments {
+    margin-left: 38px; }
+  .commentwrapper .comment-respond {
+    margin-top: 20px; }
+  .commentwrapper .comment-respond h3 {
+    margin-bottom: 20px; }
+  .commentwrapper .comment-respond .comment-form {
+    width: 100%; }
+    .commentwrapper .comment-respond .comment-form .comment-notes {
+      display: none; }
+    .commentwrapper .comment-respond .comment-form .comment-form-author {
+      padding-right: 10px; }
+    .commentwrapper .comment-respond .comment-form .comment-form-email {
+      padding-left: 10px; }
+    .commentwrapper .comment-respond .comment-form .comment-form-author, .commentwrapper .comment-respond .comment-form .comment-form-email, .commentwrapper .comment-respond .comment-form .comment-form-url, .commentwrapper .comment-respond .comment-form .comment-form-comment, .commentwrapper .comment-respond .comment-form .form-submit {
+      width: 50%;
+      display: block;
+      float: left; }
+    .commentwrapper .comment-respond .comment-form .comment-form-author:before, .commentwrapper .comment-respond .comment-form .comment-form-email:before, .commentwrapper .comment-respond .comment-form .comment-form-url:before, .commentwrapper .comment-respond .comment-form .comment-form-comment:before, .commentwrapper .comment-respond .comment-form .form-submit:before, .commentwrapper .comment-respond .comment-form .comment-form-author:after, .commentwrapper .comment-respond .comment-form .comment-form-email:after, .commentwrapper .comment-respond .comment-form .comment-form-url:after, .commentwrapper .comment-respond .comment-form .comment-form-comment:after, .commentwrapper .comment-respond .comment-form .form-submit:after {
+      display: table;
+      content: " ";
+      clear: both; }
+    .commentwrapper .comment-respond .comment-form .comment-form-author input, .commentwrapper .comment-respond .comment-form .comment-form-email input, .commentwrapper .comment-respond .comment-form .comment-form-url input, .commentwrapper .comment-respond .comment-form .comment-form-comment input, .commentwrapper .comment-respond .comment-form .form-submit input {
+      padding: 10px;
+      width: 100%; }
+    .commentwrapper .comment-respond .comment-form .comment-form-author .required, .commentwrapper .comment-respond .comment-form .comment-form-email .required, .commentwrapper .comment-respond .comment-form .comment-form-url .required, .commentwrapper .comment-respond .comment-form .comment-form-comment .required, .commentwrapper .comment-respond .comment-form .form-submit .required {
+      display: none; }
+    .commentwrapper .comment-respond .comment-form .comment-form-url, .commentwrapper .comment-respond .comment-form .comment-form-comment {
+      width: 100%;
+      padding-top: 20px; }
+    .commentwrapper .comment-respond .comment-form .comment-form-comment textarea {
+      width: 100%;
+      padding: 10px;
+      font-family: "Roboto";
+      font-size: medium; }
+    .commentwrapper .comment-respond .comment-form .subscribe-to-comments {
+      padding-top: 20px; }
+    .commentwrapper .comment-respond .comment-form .form-submit {
+      width: initial; }
+    .commentwrapper .comment-respond .comment-form .form-submit input {
+      margin-top: 20px;
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: "#dddddd";
+      color: "#eeeeee";
+      border: solid 1px #444;
+      border-bottom: solid 3px #444;
+      font-family: "Roboto";
+      font-size: large; }
+    .commentwrapper .comment-respond .comment-form a {
+      color: "#dddddd";
+      text-decoration: none; }
+  .commentwrapper .manualsubs {
+    margin-top: 10px; }
 
 .infinite-scroll .posts-navigation, .infinite-scroll.neverending .site-footer {
   display: none;
