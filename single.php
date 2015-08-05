@@ -29,7 +29,7 @@ get_header(); ?>
 			?>
 		</div>
 
-		<?php $ava = get_avatar_url(get_avatar( get_the_author_meta( 'ID' ), 64 )); ?>
+		<?php $ava = getAva(get_the_author_meta( 'ID' )); ?>
 
 		<div class="mdl-card__actions mdl-card--border meta">
 			<table>

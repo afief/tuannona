@@ -92,4 +92,7 @@ get_header(); ?>
 	<?php endif; ?>
 </div>
 
+<script src="<?=get_template_directory_uri()?>/js/masonry.pkgd.min.js" type="text/javascript" charset="utf-8"></script>
+
+
 <?php get_footer(); ?>
