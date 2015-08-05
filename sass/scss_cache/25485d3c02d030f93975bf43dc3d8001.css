@@ -1,4 +1,4 @@
-/* compiled by scssphp v0.0.9 on Wed, 05 Aug 2015 18:49:18 +0200 (1.158s) */
+/* compiled by scssphp v0.0.9 on Wed, 05 Aug 2015 19:06:11 +0200 (1.1133s) */
 
 /*!
 Theme Name: TuanNona
@@ -642,7 +642,7 @@ header h1 {
       font-family: "Roboto";
       color: #444;
       font-size: medium;
-      width: initial; }
+      width: 100%; }
 
 .sticky {
   display: block; }

@@ -17,7 +17,7 @@ get_header(); ?>
 	<div class="kiri">
 		<div class="wrapper">
 			<?php
-			$ava = get_avatar_url(get_avatar( 1, 130 ));
+			$ava = getAva(2);
 			echo '<div class="ava"><a href="' . get_author_posts_url(1) . '"><div class="avatar" style="background-image: url(' . $ava . ')"></div></a></div>';
 			?>
 		</div>
@@ -25,7 +25,7 @@ get_header(); ?>
 	<div class="kanan">
 		<div class="wrapper">
 			<?php
-			$ava = get_avatar_url(get_avatar( 2, 130 ));
+			$ava = getAva(1);
 			echo '<div class="ava"><a href="' . get_author_posts_url(2) . '"><div class="avatar" style="background-image: url(' . $ava . ')"></div></a></div>';
 			?>
 		</div>
@@ -61,7 +61,7 @@ get_header(); ?>
 					?>
 				</div>
 
-				<?php $ava = get_avatar_url(get_avatar( get_the_author_meta( 'ID' ), 64 )); ?>
+				<?php $ava = getAva(get_the_author_meta( 'ID' )); ?>
 
 				<div class="mdl-card__actions mdl-card--border meta">
 					<table>

@@ -5,6 +5,15 @@
  * @package TuanNona
  */
 
+if (! function_exists('getAva')) :
+	function getAva($id) {
+		if ($id == 1) {
+			return "http://tuannona.com/wp-content/uploads/2015/08/dara.jpg";
+		}
+		return "http://tuannona.com/wp-content/uploads/2015/08/me2.jpg";
+	}
+endif;
+
 if ( ! function_exists( 'tuannona_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
